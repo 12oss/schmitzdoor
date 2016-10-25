@@ -4,41 +4,41 @@
 /*
 
 TYPEKIT
-font-family: "proxima-nova",sans-serif;
-font-family:"proxima-nova-sc-osf-condensed",sans-serif
+font-family: "lato",sans-serif;
+font-family:"lato",sans-serif
 */
 
-.proxima-nova-light {
-	font-family: "proxima-nova", sans-serif;
+.lato-light {
+	font-family: "lato", sans-serif;
 	font-weight: 100;
 }
 
-.proxima-nova-reg {
-	font-family: "proxima-nova", sans-serif;
+.lato-reg {
+	font-family: "lato", sans-serif;
 	font-weight: 400;
 }
 
-.proxima-nova-bold {
-	font-family: "proxima-nova", sans-serif;
+.lato-bold {
+	font-family: "lato", sans-serif;
 	font-weight: 600;
 	letter-spacing: 0px;
 }
 
-.proxima-nova-black {
-	font-family: "proxima-nova", sans-serif;
+.lato-black {
+	font-family: "lato", sans-serif;
 	font-weight: 800;
 }
 
-.proxima-nova-condensed {
-	font-family: "proxima-nova-sc-osf-condensed", sans-serif
+.lato-condensed {
+	font-family: "lato", sans-serif
 }
 
 h1,
 .h1 {
-	font-family: 'proxima-nova', sans-serif;
+	font-family: 'lato', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
-	letter-spacing: -1px;
+	letter-spacing: 1px;
 }
 
 .h2,
@@ -51,9 +51,10 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'proxima-nova', sans-serif;
+	font-family: 'lato', sans-serif;
 	font-weight: 400;
-	letter-spacing: -1px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 
 .txt-uppercase {
@@ -70,7 +71,7 @@ h6 {
 
 p,
 .p {
-	font-family: "proxima-nova", sans-serif;
+	font-family: "lato", sans-serif;
 	font-weight: 400;
 	font-size: 1.6rem;
 	letter-spacing: 0px;
@@ -83,7 +84,7 @@ ul.starred li {
 	/* not needed, just to add space between the li's */
 	list-style: none;
 	/* Get rid of the default bullet points */
-	font-family: "proxima-nova", sans-serif;
+	font-family: "lato", sans-serif;
 	font-weight: 400;
 	font-size: 1.4rem;
 	letter-spacing: 0px;
@@ -119,7 +120,7 @@ ul.starred li:before {
 	color: white;
 	text-shadow: 0 0 20px black, 0 0 10px black, 0 0 20px black, 0 0 10px black;
 	z-index: 100;
-	font-family: "proxima-nova-sc-osf-condensed", sans-serif;
+	font-family: "lato", sans-serif;
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -132,7 +133,7 @@ ul.starred li:before {
 	color: white;
 	text-shadow: 0 0 20px black, 0 0 10px black, 0 0 20px black, 0 0 10px black;
 	z-index: 100;
-	font-family: "proxima-nova-sc-osf-condensed", sans-serif;
+	font-family: "lato", sans-serif;
 	text-align: right;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -146,7 +147,7 @@ ul.starred li:before {
 	color: white;
 	text-shadow: 0 0 20px black, 0 0 10px black, 0 0 20px black, 0 0 10px black;
 	z-index: 100;
-	font-family: "proxima-nova-sc-osf-condensed", sans-serif;
+	font-family: "lato", sans-serif;
 	text-align: center;
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
@@ -158,32 +159,32 @@ ul.starred li:before {
 }
 
 .jumbo-font {
-	font-size: 5.2rem;
-	line-height: 45px;
+	font-size: 3.8rem;
+	line-height: 35px;
 }
 
 .h1,
 h1 {
-	font-size: 3.8rem;
-	line-height: 36px;
+	font-size: 2.8rem;
+	line-height: 26px;
 }
 
 .h2,
 h2 {
-	font-size: 3rem;
-	line-height: 30px;
+	font-size: 2rem;
+	line-height: 20px;
 }
 
 .h3,
 h3 {
-	font-size: 2.6rem;
-	line-height: 24px;
+	font-size: 1.8rem;
+	line-height: 14px;
 }
 
 .h4,
 h4 {
-	font-size: 2rem;
-	line-height: 18px;
+	font-size: 1.6rem;
+	line-height: 10px;
 }
 
 .h5,
@@ -198,27 +199,27 @@ h6 {
 	line-height: inherit;
 }
 
-.copy-container-left {
+.txt-left {
 	text-align: left;
 }
 
-.copy-container-left-always {
+.txt-left-always {
 	text-align: left;
 }
 
-.copy-container-center {
+.txt-center {
 	text-align: center;
 }
 
-.copy-container-right {
+.txt-right {
 	text-align: right;
 }
 
-.copy-container-right-always {
+.txt-right-always {
 	text-align: right;
 }
 
-.copy-container-justified {
+.txt-justified {
 	text-align: justify;
 	-webkit-text-align-last: center;
 	-moz-text-align-last: center;

@@ -1,11 +1,75 @@
 /* CSS Document */
 
 
-/*nav ovr*/
+/*sticky footer*/
 
-body {
-	background: #192226 !important;
+.site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
+
+.site-content {
+	flex: 1;
+}
+
+#footer-contact-info a {
+	color: #999 !important;
+	font-size: 10px;
+	letter-spacing: 1px;
+	display: inline-block;
+}
+
+#footer-message {
+	background-color: #3399cc;
+	color: #f0f0f0;
+	padding: 15px;
+}
+
+#footer-social {
+	padding: 15px;
+}
+
+#footer-catch-all {
+	padding-bottom: 10px;
+}
+
+#footer-catch-all a {
+	padding: 8px;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	padding-top: 10px;
+	letter-spacing: 1px;
+}
+
+footer>div {
+	padding-top: 15px;
+}
+
+footer h2 {
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 2px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+}
+
+footer p {
+	font-size: 8px;
+	letter-spacing: 1px;
+	padding-bottom: 15px;
+}
+
+footer {
+	background-color: #222B31 !important;
+}
+
+
+/*end sticky footer*/
+
+
+/*nav ovr*/
 
 .navbar-inverse {
 	background: #222B31 !important;
@@ -19,6 +83,7 @@ body {
 	color: #FFF !important;
 	letter-spacing: 2px;
 	margin-top: 5px;
+	font-weight: 900 !important;
 }
 
 .nav {
@@ -83,7 +148,8 @@ body {
 
 @media (max-width: 767px) {
 	.navbar-header {
-		width: 90vw !important;
+		width: 95vw !important;
+		letter-spacing: 1.5px;
 	}
 	.nav {
 		padding-bottom: 20px;
@@ -110,7 +176,7 @@ img.thumb {
 }
 
 div.circle {
-	background-image: url('{{ site.github.url }}/assets/css/images/play-btn.svg');
+	background-image: url('/assets/css/images/play-btn.svg');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -250,80 +316,12 @@ body {
 	position: relative;
 }
 
-.creative-content {
-	padding-bottom: 10vh;
-	/*height of footer*/
-	padding-top: 51px;
-	/*accounts for header*/
-}
-
-.footer {
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
-	height: 10vh;
-	left: 0px;
-	/*  padding-bottom: 20px;
-    padding-top: 30px;*/
-	color: rgba(120, 120, 119, .9);
-	text-align: center;
-}
-
 nav.navbar-fixed-top > div {
 	width: 90vw;
 	margin: auto;
 	padding-left: 0px;
 	padding-right: 0px;
 }
-
-footer.footer > div.row {
-	padding-top: 5vh;
-	padding-bottom: 5vh;
-}
-
-.footer a {
-	transition: none;
-	color: rgba(85, 85, 85, 1)
-}
-
-.footer a:hover {
-	border: none;
-}
-
-.footer p {
-	font-size: 10px
-}
-
-.footer span.social-footer-links {
-	font-size: 1.2rem;
-	display: inline;
-	padding-right: 10px;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
-.footer .max-1080 {
-	border-top: solid #ccc 1px
-}
-
-#footer-logo {
-	text-align: center;
-}
-
-#footer-contacts div {
-	display: inline;
-	font-size: 1rem;
-	padding-left: 4px;
-	padding-right: 4px;
-}
-
-#footer-contacts address {
-	margin-bottom: 0px;
-	display: inline;
-}
-
-
-/*#footer-social{text-align:right;}*/
 
 
 /*end footer content*/
@@ -492,7 +490,7 @@ hr {
 /*BUTTONS*/
 
 .btn {
-	font-family: "proxima-nova-sc-osf-condensed", sans-serif;
+	font-family: "lato", sans-serif;
 	margin-top: 15px;
 	margin-left: 5px;
 	margin-right: 5px;
@@ -854,7 +852,7 @@ h2.porto.title a:focus {
 	opacity: 0;
 	box-sizing: border-box;
 	padding: 20px;
-	background: url('{{ site.github.url }}/assets/css/images/patterns/hover-black.png') repeat top left;
+	background: url('/assets/css/images/patterns/hover-black.png') repeat top left;
 	text-align: center;
 	-webkit-transition: .4s all ease;
 	transition: .4s all ease;
@@ -965,22 +963,6 @@ h2.porto.title a:focus {
 		margin: auto;
 		padding-left: 0px;
 		padding-right: 0px;
-	}
-	#footer-social {
-		border-bottom: 1px solid #ccc;
-		margin-bottom: 10px;
-	}
-	#footer-contacts div {
-		display: block;
-		border-bottom: 1px solid #ccc;
-		margin-bottom: 10px;
-		padding-bottom: 10px;
-	}
-	#footer-contacts address {
-		display: block;
-	}
-	.creative-content {
-		/*  padding-bottom: 300px;*/
 	}
 	.absolute-vertical-align {
 		position: relative;

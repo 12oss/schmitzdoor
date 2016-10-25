@@ -1,3 +1,4 @@
+
 /* -------------------------------- 
 
 Primary style
@@ -52,7 +53,7 @@ Main components
 	right: 0;
 	color: #ffffff;
 	padding: 1em;
-	font-family: "proxima-nova-sc-osf-condensed", sans-serif;
+	font-family: "lato", sans-serif;
 	font-weight: 600;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -166,7 +167,7 @@ Main components
 	margin-left: -22px;
 	margin-top: -22px;
 	border-radius: 50%;
-	background: rgba(255, 255, 255, .7) url("{{ site.github.url }}/assets/css/images/cd-arrows.svg") no-repeat center center;
+	background: rgba(255, 255, 255, .7) url("/assets/css/images/cd-arrows.svg") no-repeat center center;
 	cursor: move;
 	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 	opacity: 0;

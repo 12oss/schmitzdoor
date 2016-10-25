@@ -13,7 +13,7 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 html {
-	font-family: sans-serif;
+	font-family: 'Lato', sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%
 }
@@ -1399,7 +1399,7 @@ html {
 }
 
 body {
-	font-family: "proxima-nova", sans-serif;
+	font-family: "lato", sans-serif;
 	font-size: 1.4rem;
 	line-height: 1.42857143;
 	color: #333;
@@ -1427,7 +1427,7 @@ ul a:focus,
 ul a:hover {
 	color: rgba(50, 90, 0, .8);
 	/*  text-decoration: underline;*/
-/*	border-bottom: solid 1px rgba(50, 90, 0, .8)*/
+	/*	border-bottom: solid 1px rgba(50, 90, 0, .8)*/
 }
 
 a:focus {
@@ -4731,7 +4731,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav>li>a:focus,
 .nav>li>a:hover {
 	text-decoration: none;
-/*	background-color: #eee*/
+	/*	background-color: #eee*/
 }
 
 .nav>li.disabled>a {
@@ -5082,12 +5082,14 @@ textarea.input-group-sm>.input-group-btn>.btn {
 
 @media (max-width:767px) {
 	.navbar-brand {
+		padding-left: 15px;
+		/*
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
 		-webkit-transform: translateX(-50%);
 		-moz-transform: translateX(-50%);
-		-ms-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);*/
 	}
 }
 
@@ -8880,6 +8882,7 @@ pre[class*="language-"] {
 	cursor: help;
 }
 
+
 /* -------------------------------- 
 
 Primary style
@@ -8934,7 +8937,7 @@ Main components
 	right: 0;
 	color: #ffffff;
 	padding: 1em;
-	font-family: "proxima-nova-sc-osf-condensed", sans-serif;
+	font-family: "lato", sans-serif;
 	font-weight: 600;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -9048,7 +9051,7 @@ Main components
 	margin-left: -22px;
 	margin-top: -22px;
 	border-radius: 50%;
-	background: rgba(255, 255, 255, .7) url("{{ site.github.url }}/assets/css/images/cd-arrows.svg") no-repeat center center;
+	background: rgba(255, 255, 255, .7) url("/assets/css/images/cd-arrows.svg") no-repeat center center;
 	cursor: move;
 	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 	opacity: 0;
@@ -9082,41 +9085,41 @@ Main components
 /*
 
 TYPEKIT
-font-family: "proxima-nova",sans-serif;
-font-family:"proxima-nova-sc-osf-condensed",sans-serif
+font-family: "lato",sans-serif;
+font-family:"lato",sans-serif
 */
 
-.proxima-nova-light {
-	font-family: "proxima-nova", sans-serif;
+.lato-light {
+	font-family: "lato", sans-serif;
 	font-weight: 100;
 }
 
-.proxima-nova-reg {
-	font-family: "proxima-nova", sans-serif;
+.lato-reg {
+	font-family: "lato", sans-serif;
 	font-weight: 400;
 }
 
-.proxima-nova-bold {
-	font-family: "proxima-nova", sans-serif;
+.lato-bold {
+	font-family: "lato", sans-serif;
 	font-weight: 600;
 	letter-spacing: 0px;
 }
 
-.proxima-nova-black {
-	font-family: "proxima-nova", sans-serif;
+.lato-black {
+	font-family: "lato", sans-serif;
 	font-weight: 800;
 }
 
-.proxima-nova-condensed {
-	font-family: "proxima-nova-sc-osf-condensed", sans-serif
+.lato-condensed {
+	font-family: "lato", sans-serif
 }
 
 h1,
 .h1 {
-	font-family: 'proxima-nova', sans-serif;
+	font-family: 'lato', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
-	letter-spacing: -1px;
+	letter-spacing: 1px;
 }
 
 .h2,
@@ -9129,9 +9132,10 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'proxima-nova', sans-serif;
+	font-family: 'lato', sans-serif;
 	font-weight: 400;
-	letter-spacing: -1px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 
 .txt-uppercase {
@@ -9148,7 +9152,7 @@ h6 {
 
 p,
 .p {
-	font-family: "proxima-nova", sans-serif;
+	font-family: "lato", sans-serif;
 	font-weight: 400;
 	font-size: 1.6rem;
 	letter-spacing: 0px;
@@ -9161,7 +9165,7 @@ ul.starred li {
 	/* not needed, just to add space between the li's */
 	list-style: none;
 	/* Get rid of the default bullet points */
-	font-family: "proxima-nova", sans-serif;
+	font-family: "lato", sans-serif;
 	font-weight: 400;
 	font-size: 1.4rem;
 	letter-spacing: 0px;
@@ -9197,7 +9201,7 @@ ul.starred li:before {
 	color: white;
 	text-shadow: 0 0 20px black, 0 0 10px black, 0 0 20px black, 0 0 10px black;
 	z-index: 100;
-	font-family: "proxima-nova-sc-osf-condensed", sans-serif;
+	font-family: "lato", sans-serif;
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -9210,7 +9214,7 @@ ul.starred li:before {
 	color: white;
 	text-shadow: 0 0 20px black, 0 0 10px black, 0 0 20px black, 0 0 10px black;
 	z-index: 100;
-	font-family: "proxima-nova-sc-osf-condensed", sans-serif;
+	font-family: "lato", sans-serif;
 	text-align: right;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -9224,7 +9228,7 @@ ul.starred li:before {
 	color: white;
 	text-shadow: 0 0 20px black, 0 0 10px black, 0 0 20px black, 0 0 10px black;
 	z-index: 100;
-	font-family: "proxima-nova-sc-osf-condensed", sans-serif;
+	font-family: "lato", sans-serif;
 	text-align: center;
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
@@ -9236,32 +9240,32 @@ ul.starred li:before {
 }
 
 .jumbo-font {
-	font-size: 5.2rem;
-	line-height: 45px;
+	font-size: 3.8rem;
+	line-height: 35px;
 }
 
 .h1,
 h1 {
-	font-size: 3.8rem;
-	line-height: 36px;
+	font-size: 2.8rem;
+	line-height: 26px;
 }
 
 .h2,
 h2 {
-	font-size: 3rem;
-	line-height: 30px;
+	font-size: 2rem;
+	line-height: 20px;
 }
 
 .h3,
 h3 {
-	font-size: 2.6rem;
-	line-height: 24px;
+	font-size: 1.8rem;
+	line-height: 14px;
 }
 
 .h4,
 h4 {
-	font-size: 2rem;
-	line-height: 18px;
+	font-size: 1.6rem;
+	line-height: 10px;
 }
 
 .h5,
@@ -9276,27 +9280,27 @@ h6 {
 	line-height: inherit;
 }
 
-.copy-container-left {
+.txt-left {
 	text-align: left;
 }
 
-.copy-container-left-always {
+.txt-left-always {
 	text-align: left;
 }
 
-.copy-container-center {
+.txt-center {
 	text-align: center;
 }
 
-.copy-container-right {
+.txt-right {
 	text-align: right;
 }
 
-.copy-container-right-always {
+.txt-right-always {
 	text-align: right;
 }
 
-.copy-container-justified {
+.txt-justified {
 	text-align: justify;
 	-webkit-text-align-last: center;
 	-moz-text-align-last: center;
@@ -9528,11 +9532,75 @@ a.light-inverse:hover,
 /* CSS Document */
 
 
-/*nav ovr*/
+/*sticky footer*/
 
-body {
-	background: #192226 !important;
+.site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
+
+.site-content {
+	flex: 1;
+}
+
+#footer-contact-info a {
+	color: #999 !important;
+	font-size: 10px;
+	letter-spacing: 1px;
+	display: inline-block;
+}
+
+#footer-message {
+	background-color: #3399cc;
+	color: #f0f0f0;
+	padding: 15px;
+}
+
+#footer-social {
+	padding: 15px;
+}
+
+#footer-catch-all {
+	padding-bottom: 10px;
+}
+
+#footer-catch-all a {
+	padding: 8px;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	padding-top: 10px;
+	letter-spacing: 1px;
+}
+
+footer>div {
+	padding-top: 15px;
+}
+
+footer h2 {
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 2px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+}
+
+footer p {
+	font-size: 8px;
+	letter-spacing: 1px;
+	padding-bottom: 15px;
+}
+
+footer {
+	background-color: #222B31 !important;
+}
+
+
+/*end sticky footer*/
+
+
+/*nav ovr*/
 
 .navbar-inverse {
 	background: #222B31 !important;
@@ -9546,6 +9614,7 @@ body {
 	color: #FFF !important;
 	letter-spacing: 2px;
 	margin-top: 5px;
+	font-weight: 900 !important;
 }
 
 .nav {
@@ -9610,7 +9679,8 @@ body {
 
 @media (max-width: 767px) {
 	.navbar-header {
-		width: 90vw !important;
+		width: 95vw !important;
+		letter-spacing: 1.5px;
 	}
 	.nav {
 		padding-bottom: 20px;
@@ -9637,7 +9707,7 @@ img.thumb {
 }
 
 div.circle {
-	background-image: url('{{ site.github.url }}/assets/css/images/play-btn.svg');
+	background-image: url('/assets/css/images/play-btn.svg');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -9777,80 +9847,12 @@ body {
 	position: relative;
 }
 
-.creative-content {
-	padding-bottom: 10vh;
-	/*height of footer*/
-	padding-top: 51px;
-	/*accounts for header*/
-}
-
-.footer {
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
-	height: 10vh;
-	left: 0px;
-	/*  padding-bottom: 20px;
-    padding-top: 30px;*/
-	color: rgba(120, 120, 119, .9);
-	text-align: center;
-}
-
 nav.navbar-fixed-top > div {
 	width: 90vw;
 	margin: auto;
 	padding-left: 0px;
 	padding-right: 0px;
 }
-
-footer.footer > div.row {
-	padding-top: 5vh;
-	padding-bottom: 5vh;
-}
-
-.footer a {
-	transition: none;
-	color: rgba(85, 85, 85, 1)
-}
-
-.footer a:hover {
-	border: none;
-}
-
-.footer p {
-	font-size: 10px
-}
-
-.footer span.social-footer-links {
-	font-size: 1.2rem;
-	display: inline;
-	padding-right: 10px;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
-.footer .max-1080 {
-	border-top: solid #ccc 1px
-}
-
-#footer-logo {
-	text-align: center;
-}
-
-#footer-contacts div {
-	display: inline;
-	font-size: 1rem;
-	padding-left: 4px;
-	padding-right: 4px;
-}
-
-#footer-contacts address {
-	margin-bottom: 0px;
-	display: inline;
-}
-
-
-/*#footer-social{text-align:right;}*/
 
 
 /*end footer content*/
@@ -10019,7 +10021,7 @@ hr {
 /*BUTTONS*/
 
 .btn {
-	font-family: "proxima-nova-sc-osf-condensed", sans-serif;
+	font-family: "lato", sans-serif;
 	margin-top: 15px;
 	margin-left: 5px;
 	margin-right: 5px;
@@ -10381,7 +10383,7 @@ h2.porto.title a:focus {
 	opacity: 0;
 	box-sizing: border-box;
 	padding: 20px;
-	background: url('{{ site.github.url }}/assets/css/images/patterns/hover-black.png') repeat top left;
+	background: url('/assets/css/images/patterns/hover-black.png') repeat top left;
 	text-align: center;
 	-webkit-transition: .4s all ease;
 	transition: .4s all ease;
@@ -10492,22 +10494,6 @@ h2.porto.title a:focus {
 		margin: auto;
 		padding-left: 0px;
 		padding-right: 0px;
-	}
-	#footer-social {
-		border-bottom: 1px solid #ccc;
-		margin-bottom: 10px;
-	}
-	#footer-contacts div {
-		display: block;
-		border-bottom: 1px solid #ccc;
-		margin-bottom: 10px;
-		padding-bottom: 10px;
-	}
-	#footer-contacts address {
-		display: block;
-	}
-	.creative-content {
-		/*  padding-bottom: 300px;*/
 	}
 	.absolute-vertical-align {
 		position: relative;
@@ -10678,6 +10664,7 @@ h2.porto.title a:focus {
 	}
 }
 
+
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 
 .fancybox-wrap,
@@ -10761,7 +10748,7 @@ h2.porto.title a:focus {
 .fancybox-close,
 .fancybox-prev span,
 .fancybox-next span {
-	background-image: url('{{ site.github.url }}/assets/css/images/fancybox/fancybox_sprite.png');
+	background-image: url('/assets/css/images/fancybox/fancybox_sprite.png');
 }
 
 #fancybox-loading {
@@ -10779,7 +10766,7 @@ h2.porto.title a:focus {
 #fancybox-loading div {
 	width: 44px;
 	height: 44px;
-	background: url('{{ site.github.url }}/assets/css/images/fancybox/fancybox_loading.gif') center center no-repeat;
+	background: url('/assets/css/images/fancybox/fancybox_loading.gif') center center no-repeat;
 }
 
 .fancybox-close {
@@ -10799,7 +10786,7 @@ h2.porto.title a:focus {
 	height: 100%;
 	cursor: pointer;
 	text-decoration: none;
-	background: transparent url('{{ site.github.url }}/assets/css/images/fancybox/blank.gif');
+	background: transparent url('/assets/css/images/fancybox/blank.gif');
 	/* helps IE */
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	z-index: 8040;
@@ -10871,7 +10858,7 @@ h2.porto.title a:focus {
 	overflow: hidden;
 	display: none;
 	z-index: 8010;
-	background: url('{{ site.github.url }}/assets/css/images/fancybox/fancybox_overlay.png');
+	background: url('/assets/css/images/fancybox/fancybox_overlay.png');
 }
 
 .fancybox-overlay-fixed {
@@ -10960,12 +10947,12 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	.fancybox-close,
 	.fancybox-prev span,
 	.fancybox-next span {
-		background-image: url('{{ site.github.url }}/assets/css/images/fancybox/fancybox_sprite@2x.png');
+		background-image: url('/assets/css/images/fancybox/fancybox_sprite@2x.png');
 		background-size: 44px 152px;
 		/*The size of the normal image, half the size of the hi-res image*/
 	}
 	#fancybox-loading div {
-		background-image: url('{{ site.github.url }}/assets/css/images/fancybox/fancybox_loading@2x.gif');
+		background-image: url('/assets/css/images/fancybox/fancybox_loading@2x.gif');
 		background-size: 24px 24px;
 		/*The size of the normal image, half the size of the hi-res image*/
 	}
@@ -10980,7 +10967,7 @@ share-button {
 	background: #a29baa;
 	padding: 5px 10px 5px 30px;
 	border-radius: 5px;
-	font-family: "proxima-nova-sc-osf-condensed", sans-serif;
+	font-family: "lato", sans-serif;
 	font-weight: 800;
 	-webkit-font-smoothing: antialiased;
 	cursor: pointer;
