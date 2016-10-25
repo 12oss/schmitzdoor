@@ -9530,7 +9530,6 @@ a.light-inverse:hover,
 
 /*nav ovr*/
 
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
 body {
 	background: #192226 !important;
 }
@@ -9541,8 +9540,8 @@ body {
 }
 
 .navbar-brand {
-	font: 12px Lato !important;
-	font-family: Lato !important;
+	font: 12px 'Lato', sans-serif !important;
+	font-family: 'Lato', sans-serif !important;
 	text-transform: uppercase;
 	color: #FFF !important;
 	letter-spacing: 2px;
@@ -9554,8 +9553,8 @@ body {
 }
 
 .nav a {
-	font: 500 11px Lato !important;
-	font-family: Lato !important;
+	font: 500 11px 'Lato', sans-serif !important;
+	font-family: 'Lato', sans-serif !important;
 	letter-spacing: 2px;
 	padding: 16px !important;
 	color: #a3bfc6 !important;
