@@ -170,6 +170,8 @@ body {
 nav.navbar-fixed-top > div {
 	width: 90vw;
 	margin: auto;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 footer.footer > div.row {
@@ -856,6 +858,12 @@ h2.porto.title a:focus {
 }
 
 @media (max-width: 767px) {
+	nav.navbar-fixed-top > div {
+		width: 100vw;
+		margin: auto;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 	#footer-social {
 		border-bottom: 1px solid #ccc;
 		margin-bottom: 10px;

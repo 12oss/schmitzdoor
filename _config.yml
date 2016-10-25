@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Schmitz Door Service
 email: schmitzdoor@gmail.com
-description: Locally owned & operated garage door service in the Madison, WI area for over 35 years.
+description: Locally owned & operated garage door service within the Madison, WI area for over 35 years.
 twitter_username: 12ossome
 github_username:  12oss
 
@@ -33,9 +33,11 @@ destination:      _gh_pages
 host:             0.0.0.0
 port:             12055
 baseurl:          "/schmitzdoor"
-#Production : https://12oss.github.io/Jekyll-Project/
-#DEV : http://0.0.0.0:12055/Jekyll-Project/
-url:              "https://12oss.github.io/schmitzdoor/"
+#Production : https://12oss.github.io/schmitzdoor/
+#DEV : http://0.0.0.0:12055/schmitzdoor/
+#site.github.url
+#site.baseurl
+#url:              "http://0.0.0.0:12055/schmitzdoor/"
 encoding:         UTF-8
 
 # Gems

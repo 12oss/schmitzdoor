@@ -12,7 +12,7 @@
 var cb = function() {
 	var l = document.createElement('link');
 	l.rel = 'stylesheet';
-	l.href = '{{ site.github.url }}/dist/css/min/schmitzdoor.min.css';
+	l.href = '{{ site.baseurl }}/dist/css/min/schmitzdoor.min.css';
 	var h = document.getElementsByTagName('head')[0];
 	h.parentNode.insertBefore(l, h);
 };
@@ -21,12 +21,27 @@ var raf = requestAnimationFrame || mozRequestAnimationFrame ||
 if (raf) raf(cb);
 else window.addEventListener('load', cb);
 </script>
-<script async src="{{ site.github.url }}/dist/js/min/schmitzdoor.min.js"></script>
+<script async src="{{ site.baseurl }}/dist/js/min/schmitzdoor.min.js"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script>
 //async breaks my smooth scroll to....
 //function f1 is defined around everything so that I can async all js and then run all this code after page loads in
 function f1() {
+	//Nav hover
+	$(".nav.navbar-nav li").hover(
+		function() {
+			$(this).find("span").stop().animate({
+				width: "100%",
+				opacity: "1",
+			}, 400, function() {})
+		},
+		function() {
+			$(this).find("span").stop().animate({
+				width: "0%",
+				opacity: "0",
+			}, 400, function() {})
+		}
+	);
 
 	//Google Analytics-->
 
