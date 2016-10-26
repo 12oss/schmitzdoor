@@ -494,12 +494,8 @@ hr {
 	margin-top: 15px;
 	margin-left: 5px;
 	margin-right: 5px;
-	font-weight: 500;
-	/*border-radius: 500px;*/
-	font-size: 1.4rem;
 	padding: 8px 18px;
 	text-transform: uppercase;
-	letter-spacing: .5px;
 	transition: background-color 0.15s ease 0s, border-color 0.15s ease 0s, color 0.15s ease 0s;
 	border-radius: 6px;
 	box-shadow: 0px 0px 5px rgba(255, 255, 255, .3);
@@ -598,14 +594,14 @@ hr {
 }
 
 .btn-primary:hover {
-	background-color: rgba(130, 170, 60, 1);
-	border: 1px solid rgba(230, 250, 200, 1);
+	background-color: #333333;
+	border: 1px solid #3399ff;
 	color: #fff;
 }
 
 .btn-primary {
-	background-color: rgba(110, 150, 40, 1);
-	border: 1px solid rgba(110, 150, 40, 1);
+	background-color: #3399cc;
+	border: 1px solid #3399cc;
 	color: #fff;
 }
 
@@ -668,7 +664,7 @@ hr {
 }
 
 .btn-inverse.light-primary {
-	border: 1px solid rgba(230, 250, 200, 1);
+	border: 1px solid ##336699;
 }
 
 .btn-inverse.light-success {
@@ -751,7 +747,7 @@ h2.porto.title a:focus {
 }
 
 .porto .porto-item.bg-primary:hover {
-	background-color: rgba(110, 150, 40, 1);
+	background-color: #3399cc;
 }
 
 .porto .porto-item.bg-success {
