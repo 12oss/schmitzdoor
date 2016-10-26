@@ -40,20 +40,7 @@
 	</div>
 </div>
 <!--end footer div-->
-<!-- defer of css via google pagespeed-->
-<script>
-var cb = function() {
-	var l = document.createElement('link');
-	l.rel = 'stylesheet';
-	l.href = '{{ site.baseurl }}/dist/css/min/schmitzdoor.min.css';
-	var h = document.getElementsByTagName('head')[0];
-	h.parentNode.insertBefore(l, h);
-};
-var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-	webkitRequestAnimationFrame || msRequestAnimationFrame;
-if (raf) raf(cb);
-else window.addEventListener('load', cb);
-</script>
+
 <script async src="{{ site.baseurl }}/dist/js/min/schmitzdoor.min.js"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script>
