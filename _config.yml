@@ -32,7 +32,7 @@ source:           _gh_pages
 destination:      docs
 host:             0.0.0.0
 port:             12055
-baseurl:          "https://12oss.github.io/schmitzdoor/"
+baseurl:          ""
 #Production : https://12oss.github.io/schmitzdoor/
 #DEV : http://0.0.0.0:55/schmitzdoor/
 #site.github.url
