@@ -28,19 +28,34 @@ theme:            minima
 permalink:        pretty
 
 # Server
-source:           docs
-destination:      _gh_pages
+source:           _gh_pages
+destination:      docs
 host:             0.0.0.0
 port:             12055
-baseurl:          "/schmitzdoor"
+baseurl:          ""
 #Production : https://12oss.github.io/schmitzdoor/
-#DEV : http://0.0.0.0:12055/schmitzdoor/
+#DEV : http://0.0.0.0:55/schmitzdoor/
 #site.github.url
 #site.baseurl
-#url:              "http://0.0.0.0:12055/schmitzdoor/"
+url:              "http://schmitzdoor.com"
 encoding:         UTF-8
+
+#Compress HTML
+compress_html:
+    clippings: []
+    comments: []
+    endings: []
+    ignore:
+    envs: []
+    blanklines: false
+    profile: false
+    startings: []
+
 
 # Gems
 gems:
   - jekyll-seo-tag
-  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-sitemap
+ # - github-pages
+ # - jekyll-github-metadata
