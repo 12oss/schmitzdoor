@@ -347,7 +347,7 @@
  	width: 40%;
  }
  
- div.left {
+ .left-pos {
  	position: absolute;
  	top: 50%;
  	left: 3%;
@@ -361,7 +361,7 @@
  	text-shadow: 0px 0px 35px rgba(0, 0, 0, 1);
  }
  
- div.center {
+ .center-pos {
  	position: absolute;
  	top: 50%;
  	left: 5%;
@@ -376,7 +376,7 @@
  	text-shadow: 0px 0px 35px rgba(0, 0, 0, 1);
  }
  
- div.right {
+ .right-pos {
  	position: absolute;
  	top: 50%;
  	right: 3%;

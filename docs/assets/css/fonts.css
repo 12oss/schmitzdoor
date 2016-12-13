@@ -1,12 +1,4 @@
-/*FONT FAMILIES*/
-@import url('//fonts.googleapis.com/css?family=Lato:400,900');
 
-/*
-
-TYPEKIT
-font-family: "lato",sans-serif;
-font-family:"lato",sans-serif
-*/
 
 .lato-light {
 	font-family: "lato", sans-serif;
@@ -230,7 +222,7 @@ h6 {
 /*COLORS*/
 
 .p-primary {
-	color: rgba(110, 150, 40, 1)
+	color: #39c
 }
 
 .light-primary {

@@ -13,8 +13,7 @@ module.exports = function(grunt) {
 					'_gh_pages/assets/css/fonts.css',
 					'_gh_pages/assets/css/extras.css',
 					'_gh_pages/assets/css/masonry.css',
-					'_gh_pages/assets/css/jquery.fancybox.css',
-					'_gh_pages/assets/css/share-button.css'
+					'_gh_pages/assets/css/jquery.fancybox.css'
 				],
 
 				dest: '_gh_pages/dist/css/schmitzdoor.css'
@@ -33,7 +32,8 @@ module.exports = function(grunt) {
 					'_gh_pages/assets/js/lazysizes.min.js',
 					'_gh_pages/assets/js/ls.respimg.min.js',
 					'_gh_pages/assets/js/jquery.smooth-scroll.min.js',
-					'_gh_pages/assets/js/share-button.min.js'
+					'_gh_pages/assets/js/clipboard.min.js',
+					'_gh_pages/assets/js/site.js'
 				],
 
 				dest: '_gh_pages/dist/js/schmitzdoor.js'

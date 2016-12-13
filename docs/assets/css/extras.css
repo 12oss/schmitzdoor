@@ -243,7 +243,7 @@ div.youtube:hover div.circle {
 }
 
 a#myHeader1 {
-	color: rgba(110, 150, 40, 1);
+	color: #39c;
 }
 
 
@@ -654,12 +654,12 @@ hr {
 }
 
 .btn-link {
-	color: rgba(110, 150, 40, 1);
+	color: #39c;
 	border: none;
 }
 
 .btn-link:hover {
-	color: rgba(110, 150, 40, 1);
+	color: #39c;
 	/*  border: rgba(190,190,190,1) 1px solid;*/
 }
 
