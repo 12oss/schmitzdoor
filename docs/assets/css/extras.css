@@ -1,6 +1,71 @@
 /* CSS Document */
 
+/*scroll to top*/
 
+div.back-to-top-parent {
+	width: 100%;
+	height: auto;
+	position: relative;
+	opacity: .5;
+	transition: all 250ms;
+}
+
+div.back-to-top-parent:hover {
+	opacity: 1;
+}
+
+div#back-to-top:before {
+	/*content: "\f077";*/
+	content: "\f106";
+	font-family: fontawesome;
+	display: inherit;
+	font-size: 20px;
+	line-height: 12px;
+}
+
+div#back-to-top:hover {
+	width: 54px;
+	height: 54px;
+	right: 8px;
+	bottom: 8px;
+}
+
+div#back-to-top {
+	transition: all 550ms;
+	text-align: center;
+	cursor: pointer;
+	display: none;
+	width: 50px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	background: rgba(20, 25, 30, .6);
+	color: rgba(195, 195, 195, 1);
+	border-radius: 50px;
+	height: 50px;
+	line-height: 18px;
+	margin: 12px;
+	padding: 9px;
+	font-weight: 900 !important;
+	border: 1px solid rgba(250, 250, 250, .4);
+	z-index: 9999;
+}
+
+@media (max-width: 767px) {
+	div#back-to-top {
+		right: 0px;
+		bottom: 35px;
+	}
+	div#back-to-top:hover {
+		width: 54px;
+		height: 54px;
+		right: -2px;
+		bottom: 33px;
+	}
+}
+
+
+/**end scroll to top/
 /*sticky footer*/
 
 .site {

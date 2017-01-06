@@ -13,7 +13,8 @@ module.exports = function(grunt) {
 					'_gh_pages/assets/css/fonts.css',
 					'_gh_pages/assets/css/extras.css',
 					'_gh_pages/assets/css/masonry.css',
-					'_gh_pages/assets/css/jquery.fancybox.css'
+					'_gh_pages/assets/css/jquery.fancybox.css',
+					'_gh_pages/assets/css/share-button.css'
 				],
 
 				dest: '_gh_pages/dist/css/schmitzdoor.css'
