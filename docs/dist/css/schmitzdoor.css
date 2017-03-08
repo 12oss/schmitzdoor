@@ -3672,7 +3672,7 @@ textarea.form-group-lg .form-control {
 	margin-bottom: 0;
 	font-size: 12px;
 	font-weight: 900;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	line-height: 1.42857143;
 	text-align: center;
 	white-space: nowrap;
@@ -9112,7 +9112,7 @@ h1,
 	font-family: 'lato', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 }
 
 .h2,
@@ -9510,6 +9510,9 @@ a.light-inverse:hover,
 	.img-caption-center {
 		font-size: 10px
 	}
+	.txt-left, .txt-right {
+	text-align: center;
+}
 }
 
 @media (max-width: 580px) {
@@ -9982,8 +9985,8 @@ section.row {
 }
 
 .nopad {
-	padding-left: 0px;
-	padding-right: 0px;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
 }
 
 hr {
