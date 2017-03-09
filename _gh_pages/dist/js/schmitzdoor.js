@@ -6034,9 +6034,9 @@ function f1() {
 
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 150) {
-			$('#back-to-top').stop().fadeIn(250);
+			$('#back-to-top').css('opacity', '1');
 		} else {
-			$('#back-to-top').stop().fadeOut(250);
+			$('#back-to-top').css('opacity', '0');
 		}
 	});
 	/*end BACK TO TOP*/
@@ -6165,7 +6165,36 @@ function f1() {
 		}
 	}(this));
 	/*end ASYNC CSS FILES*/
-
+	/*TYPE KIT*/
+	(function(d) {
+		var config = {
+				kitId: 'uyw8kwr',
+				scriptTimeout: 3000,
+				async: true
+			},
+			h = d.documentElement,
+			t = setTimeout(function() {
+				h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+			}, config.scriptTimeout),
+			tk = d.createElement("script"),
+			f = false,
+			s = d.getElementsByTagName("script")[0],
+			a;
+		h.className += " wf-loading";
+		tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+		tk.async = true;
+		tk.onload = tk.onreadystatechange = function() {
+			a = this.readyState;
+			if (f || a && a != "complete" && a != "loaded") return;
+			f = true;
+			clearTimeout(t);
+			try {
+				Typekit.load(config)
+			} catch (e) {}
+		};
+		s.parentNode.insertBefore(tk, s)
+	})(document);
+	/*end TYPEKIT*/
 	/*CLIPBOARD*/
 	var clipboard = new Clipboard('.copyclip');
 	clipboard.on('success', function(e) {

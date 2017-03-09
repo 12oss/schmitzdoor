@@ -2,53 +2,97 @@
 layout: default
 title: Contact Us | Schmitz Door Service Fitchburg, WI
 description: Contact Us Description
+breadcrumb: Contact Us
 ---
-<div class="col-xs-12" style="padding-bottom: 25px;">
-	<div class="clearfix" style="padding:15px"></div>
-	<div class="panel panel-default max-1080">
+<style type="text/css">
+.google-maps {
+	position: relative;
+	padding-bottom: 75%;
+	/* This is the aspect ratio*/
+	height: 0;
+	overflow: hidden;
+}
 
-		<div class="panel-heading">
-			<h1>Contact Us</h1>
-			<small><em><i class="fa fa-exclamation-circle"></i> Be sure to fill out the form completely.</em></small>
-		</div>
-		<div class="panel-body">
-			<form action="https://formspree.io/schmitzdoor@gmail.com" method="POST">
-				<div class="form-group">
-					<label for="Name" class="col-lg-2 control-label txt-right">Name:</label>
-					<div class="col-lg-10">
-						<input type="name" class="form-control" id="Name" name="Name" placeholder="What does your mother call you?" data-error="Hey, we need to know who we are dealing with here!" required="">
-						<div class="help-block with-errors"></div>
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+</style>
+<div class="col-xs-12" style="padding-bottom: 50px;">
+	<h1>Contact Us</h1> {% include nav-breadcrumbs.html %}
+	<div class="clearfix hidden-xs" style="padding:15px"></div>
+	<div class="row no-margin">
+		<div class="panel panel-default max-1080">
+			<div class="panel-heading">
+				<h2 class="txt-inherit">Contact Us Form</h2>
+				<small><em><i class="fa fa-exclamation-circle"></i> Be sure to fill out the form completely.</em></small>
+			</div>
+			<div class="panel-body">
+				<div class="col-xs-12 col-sm-7">
+					<form action="https://formspree.io/schmitzdoor@gmail.com" method="POST">
+						<div class="form-group">
+							<label for="Name" class="col-lg-2 control-label txt-right">Name:</label>
+							<div class="col-lg-10">
+								<input type="name" class="form-control" id="Name" name="Name" placeholder="What does your mother call you?" data-error="Hey, we need to know who we are dealing with here!" required="">
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="Email" class="col-lg-2 control-label txt-right">Email:</label>
+							<div class="col-lg-10">
+								<input type="email" class="form-control" id="Email" name="Email" placeholder="Where can we email you back?" data-error="Bruh, that email address is invalid." required="">
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="Phone" class="col-lg-2 control-label txt-right">Phone:</label>
+							<div class="col-lg-10">
+								<input type="phone" class="form-control" id="Phone" name="Phone" placeholder="How can we reach you on the tele?" data-error="Sometimes it's easier/quicker to just make a phone call." required="">
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="Message" class="col-lg-2 control-label txt-right">Message:</label>
+							<div class="col-lg-10">
+								<textarea class="form-control" rows="4" id="Message" name="Message" placeholder="What's on your mind?" data-error="Aw, come on. I thought you wanted to contact us..." required=""></textarea>
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-offset-2 col-lg-10">
+								<button type="submit" value="send" class="btn btn-primary">
+									Send Message
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-xs-12 col-sm-5">
+					<h2 class="txt-inherit">Our Location</h2>
+					<p><small>We love to receive postcards!</small>
+						<br>
+						<a href="https://goo.gl/maps/TPTxmPJm6Bn" target="_blank">
+							<address><strong>
+						6140 Cottonwood Dr
+						<br>Suite F
+						<br> Fitchburg, WI 53719</strong>
+							</address>
+						</a>
+					</p>
+					<p><small>Got a computer with electronic mail?
+					<br><strong><a href='ma&#105;lto&#58;&#115;%6&#51;h&#37;6Dit&#37;7A&#100;o&#111;r&#64;&#103;m&#97;i&#37;&#54;&#67;&#46;%&#54;3om'>s&#99;&#104;m&#105;&#116;zdoor&#64;&#103;&#109;ail&#46;com</a></strong></small></p>
+					<p><small>Rather speak with us directly? Call us!<br><a href="tel:+1-608-274-0880"><strong>608.272.0880</strong></a></small></p>
+					<div class="clearfix"></div>
+					<div class="google-maps">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.325019023467!2d-89.47200448452287!3d43.01354557914848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8807b20156638319%3A0xff16d86e3c6aa53c!2s6140+Cottonwood+Dr+f%2C+Fitchburg%2C+WI+53719!5e0!3m2!1sen!2sus!4v1489081353681" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
-				<div class="form-group">
-					<label for="Email" class="col-lg-2 control-label txt-right">Email:</label>
-					<div class="col-lg-10">
-						<input type="email" class="form-control" id="Email" name="Email" placeholder="Where can we email you back?" data-error="Bruh, that email address is invalid." required="">
-						<div class="help-block with-errors"></div>
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="Phone" class="col-lg-2 control-label txt-right">Phone:</label>
-					<div class="col-lg-10">
-						<input type="phone" class="form-control" id="Phone" name="Phone" placeholder="How can we reach you on the tele?" data-error="Sometimes it's easier/quicker to just make a phone call." required="">
-						<div class="help-block with-errors"></div>
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="Message" class="col-lg-2 control-label txt-right">Message:</label>
-					<div class="col-lg-10">
-						<textarea class="form-control" rows="4" id="Message" name="Message" placeholder="What's on your mind?" data-error="Aw, come on. I thought you wanted to contact us..." required=""></textarea>
-						<div class="help-block with-errors"></div>
-					</div>
-				</div>
-				<div class="form-group">
-					<div class="col-lg-offset-2 col-lg-10">
-						<button type="submit" value="send" class="btn btn-primary">
-							Send Message
-						</button>
-					</div>
-				</div>
-			</form>
+			</div>
 		</div>
 	</div>
 </div>
+
+

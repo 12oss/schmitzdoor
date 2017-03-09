@@ -2,15 +2,40 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="hideload">
 
 <head>
 	{% seo %}
-<!--	<title>{{ page.title }}</title>
+	<!--	<title>{{ page.title }}</title>
 	{% if page.description %}
 	<meta name="description" content="{{ page.description }}">{% endif %} -->
 	{% include header.html %}
 	<style>
+	.hideload {
+		/* styles to use when web fonts are loading */
+		opacity: 0; 
+		transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-webkit-transition: all 1s ease-in-out;
+		/*Loader Animation is below*/
+		position: fixed;
+		left: 0;
+		top: -200px;
+		z-index: 999;
+		width: 100%;
+		height: 100%;
+		overflow: visible;
+		background: #fff url('{{ site.baseurl }}/assets/css/images/ajax-loader.gif') no-repeat center center;
+	}
+	
+	.wf-active {
+		/* styles to use when web fonts are active */
+		opacity: 1;
+		top: 0px;
+		position: relative;
+		z-index: 5;
+	}
+	
 	@font-face {
 		font-family: 'FontAwesome';
 		src: url('{{ site.baseurl }}/dist/css/fonts/fontawesome-webfont.eot');
@@ -23,10 +48,14 @@ layout: compress
 		font-style: normal
 	}
 	/* GLOBAL CRITICAL CSS*/
-	{% include critical.min.css %}
+	
+	{
+		% include critical.min.css %
+	}
 	/*END GLOBAL CRITICAL CSS*/
 	</style>
 </head>
+<div id="preloader"></div>
 
 <body class="site">
 	<header>
@@ -47,3 +76,6 @@ layout: compress
 </body>
 
 </html>
+
+
+

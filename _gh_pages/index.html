@@ -25,7 +25,12 @@ description:
 .cycle-slideshow {
 	overflow: visible !important;
 	width: 80%;
-	margin-left: 10%;
+	margin: auto;
+}
+
+.cycle-slideshow img {
+	width: auto !important;
+	height: auto !important;
 }
 
 .centered-ss-nav {
@@ -113,6 +118,12 @@ description:
 	background-color: white;
 }
 
+@media screen and (max-width: 767px) and (min-width: 1px) {
+	.cycle-slideshow {
+		width: 100%;
+	}
+}
+
 
 /*END LEFT RIGHT SLIDESHOW SHOW*/
 </style>
@@ -132,20 +143,20 @@ description:
 				<div class="cycle-slideshow responsive" data-cycle-fx=carousel data-cycle-timeout=0 data-cycle-carousel-fluid=true data-cycle-carousel-visible=1 data-cycle-pager="#pager" data-cycle-next="#nav-next" data-cycle-prev="#nav-prev" data-cycle-slides="> div" data-cycle-speed="1000" data-cycle-easing=easeInOutCubic>
 					<!-- SLIDE 1-->
 					<div>
-						<img class="visible-xs" src="http://fpoimg.com/600x650?bg_color=C90000&text_color=ffffff&text=Slide%201%20mobile" width="100%" alt="" />
-						<img class="hidden-xs" src="http://fpoimg.com/1200x500?bg_color=C90000&text_color=ffffff&text=Slide%201" width="100%" alt="" />
+						<img class="visible-xs" src="http://fpoimg.com/600x650?bg_color=C90000&text_color=ffffff&text=Slide%201%20mobile" alt="" />
+						<img class="hidden-xs" src="http://fpoimg.com/1200x500?bg_color=C90000&text_color=ffffff&text=Slide%201" alt="" />
 					</div>
 					<!-- end SLIDE 1-->
 					<!-- SLIDE 2-->
 					<div style="display: none">
-						<img class="visible-xs" src="http://fpoimg.com/600x650?bg_color=c900c9&text_color=ffffff&text=Slide%202%20mobile" width="100%" alt="" />
-						<img class="hidden-xs" src="http://fpoimg.com/1200x500?bg_color=c900c9&text_color=ffffff&text=Slide%202" width="100%" alt="" />
+						<img class="visible-xs" src="http://fpoimg.com/600x650?bg_color=c900c9&text_color=ffffff&text=Slide%202%20mobile" alt="" />
+						<img class="hidden-xs" src="http://fpoimg.com/1200x500?bg_color=c900c9&text_color=ffffff&text=Slide%202" alt="" />
 					</div>
 					<!-- end SLIDE 2-->
 					<!-- SLIDE 3-->
 					<div style="display: none">
-						<img class="visible-xs" src="http://fpoimg.com/600x650?bg_color=00c900&text_color=ffffff&text=Slide%203%20mobile" width="100%" alt="" />
-						<img class="hidden-xs" src="http://fpoimg.com/1200x500?bg_color=00c900&text_color=ffffff&text=Slide%203" width="100%" alt="" />
+						<img class="visible-xs" src="http://fpoimg.com/600x650?bg_color=00c900&text_color=ffffff&text=Slide%203%20mobile" alt="" />
+						<img class="hidden-xs" src="http://fpoimg.com/1200x500?bg_color=00c900&text_color=ffffff&text=Slide%203" alt="" />
 					</div>
 					<!-- end SLIDE 3-->
 				</div>
@@ -154,8 +165,8 @@ description:
 	</div>
 </div>
 <div class="row max-1080 txt-center jumbotron">
-	<h1 style="line-height: .8em;"><small>SCHMITZ DOOR SERVICE</small></h1>
-	<h2><small>SERVICING GARAGE DOORS WITHIN THE MADISON, WI AREA FOR OVER 35 YEARS.</small></h2>
+	<h1 style="line-height: .8em;">SCHMITZ DOOR SERVICE</h1>
+	<h2><small>LOCALLY OWNED &amp; OPERATED SERVICING GARAGE DOORS WITHIN THE MADISON, WI AREA FOR OVER 35 YEARS.</small></h2>
 </div>
 <div class="row max-1080">
 	<div class="row-eq-height">
@@ -163,6 +174,7 @@ description:
 		<div class="col-xs-12 col-sm-6 no-pad txt-right">
 			<h1 class="txt-inherit">Experienced Garage Service</h1>
 			<p>With Schmitz Door Service on the job, you can insure the integrity of your overhead garage door and opener system. Our experienced garage door sales and service staff will work with you to find the perfect solution to your problem.</p>
+			<a href="{{ site.baseurl }}/services" class="btn btn-primary action-link" type="button">OUR SERVICES</a>
 		</div>
 		<div class="col-xs-12 col-sm-6 no-pad">
 			<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://fpoimg.com/800x450?bg_color=00c900&text_color=ffffff&text=IMG" class="lazyload" alt="" width="100%" />
@@ -192,6 +204,7 @@ description:
 		<div class="col-xs-12 col-sm-6 no-pad txt-right">
 			<h1 class="txt-inherit">Your Satisfaction is Our Primary Goal</h1>
 			<p>We know that the best way to ensure your satisfaction is by responding quickly and doing the job right the first time. Whether it is a broken spring, a snapped cable or a noisy roller or a brand new door, give our garage door repair technicians a call. For dependable, high quality garage door service, think of us Schmitz Door Service first.</p>
+			<a target="_blank" href="https://goo.gl/BCiD0j" class="btn btn-primary action-link" type="button">READ THE REVIEWS</a>
 		</div>
 		<div class="col-xs-12 col-sm-6 no-pad">
 			<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://fpoimg.com/800x450?bg_color=00c900&text_color=ffffff&text=IMG" class="lazyload" alt="" width="100%" />
@@ -200,5 +213,6 @@ description:
 	</div>
 	<div class="clearfix" style="padding: 30px;"></div>
 </div>
+
 
 

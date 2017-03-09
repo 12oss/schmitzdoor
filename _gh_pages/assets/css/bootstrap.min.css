@@ -8,7 +8,7 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 html {
-	font-family: 'Lato', sans-serif;
+	font-family: 'tk-nimbus-sans', sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%
 }
@@ -1394,7 +1394,7 @@ html {
 }
 
 body {
-	font-family: "lato", sans-serif;
+	font-family: "tk-nimbus-sans", sans-serif;
 	font-size: 1.4rem;
 	line-height: 1.42857143;
 	color: #333;
@@ -3665,8 +3665,8 @@ textarea.form-group-lg .form-control {
 	display: inline-block;
 	padding: 6px 12px;
 	margin-bottom: 0;
-	font-size: 12px;
-	font-weight: 900;
+	font-size: 14px;
+	font-weight: 400;
 	letter-spacing: 1px;
 	line-height: 1.42857143;
 	text-align: center;
@@ -5469,7 +5469,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 .navbar-inverse .navbar-nav>li>a {
 	color: #9d9d9d;
 	font-weight: 500;
-	font-family: Lato;
+	font-family: tk-nimbus-sans;
 	font-size: 12px;
 }
 
