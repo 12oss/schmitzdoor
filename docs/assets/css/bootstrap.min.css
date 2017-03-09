@@ -5095,11 +5095,11 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-brand>img {
-	display: block;
+	display: inline-block;
 	max-height: 40px;
-	height: 40px;
-	margin-top: -5px;
-	max-width: 130px;
+	height: 25px;
+	margin-top: -7px;
+	max-width: 25px;
 }
 
 @media (min-width:768px) {

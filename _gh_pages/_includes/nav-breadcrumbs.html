@@ -8,6 +8,7 @@
 {% if url.size > 0 %}
 <nav class="breadcrumbs hidden-sm-down">
 	<a class="breadcrumb-item" href="{{ site.baseurl }}/">Home</a>
+	<!--{% include icon.html class="breadcrumb-item" %}-->
 	<ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
 		<!-- Iteration breadcrumb item -->
 		{% assign position = 0 %} {% for crumb in breadcrumbs %}

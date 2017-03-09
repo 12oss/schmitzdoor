@@ -12,7 +12,6 @@ description:
 	margin: auto;
 	background-color: rgba(0, 0, 0, 1)
 }
-
 .cycle-slideshow div.cycle-slide {
 	opacity: .25 !important;
 	transition: opacity .5s linear .2s;
@@ -21,13 +20,12 @@ description:
 .cycle-slideshow div.cycle-slide-active {
 	opacity: 1 !important;
 }
-
 .cycle-slideshow {
 	overflow: visible !important;
 	width: 80%;
 	margin: auto;
+	position: relative;
 }
-
 .cycle-slideshow img {
 	width: auto !important;
 	height: auto !important;
@@ -127,10 +125,10 @@ description:
 
 /*END LEFT RIGHT SLIDESHOW SHOW*/
 </style>
-<div class="row no-margin">
+<div class="row">
 	<div class="col-xs-12 nopad">
 		<div class="slideshow-container">
-			<div class="row no-margin" style="position: relative;">
+			<div class="row" style="position: relative;">
 				<div class="centered-ss-nav">
 					<div id="nav-prev">
 						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
@@ -140,23 +138,23 @@ description:
 					</div>
 				</div>
 				<div class="cycle-pager" id=pager></div>
-				<div class="cycle-slideshow responsive" data-cycle-fx=carousel data-cycle-timeout=0 data-cycle-carousel-fluid=true data-cycle-carousel-visible=1 data-cycle-pager="#pager" data-cycle-next="#nav-next" data-cycle-prev="#nav-prev" data-cycle-slides="> div" data-cycle-speed="1000" data-cycle-easing=easeInOutCubic>
+				<div class="cycle-slideshow responsive" data-cycle-pager="#pager" data-cycle-next="#nav-next" data-cycle-prev="#nav-prev" data-cycle-slides="> div" data-cycle-speed=1500 data-cycle-timeout=6500 data-cycle-fx="carousel" data-cycle-carousel-fluid=true data-cycle-carousel-visible=1 data-cycle-easing=easeInOutCubic>
 					<!-- SLIDE 1-->
 					<div>
-						<img class="visible-xs" src="http://fpoimg.com/600x650?bg_color=C90000&text_color=ffffff&text=Slide%201%20mobile" alt="" />
-						<img class="hidden-xs" src="http://fpoimg.com/1200x500?bg_color=C90000&text_color=ffffff&text=Slide%201" alt="" />
+						<img class="visible-xs" src="http://fpoimg.com/600x650?bg_color=C90000&text_color=ffffff&text=Slide%201%20mobile" alt="" width="100%" />
+						<img class="hidden-xs" src="http://fpoimg.com/1200x500?bg_color=C90000&text_color=ffffff&text=Slide%201" alt="" width="100%"/>
 					</div>
 					<!-- end SLIDE 1-->
 					<!-- SLIDE 2-->
-					<div style="display: none">
-						<img class="visible-xs" src="http://fpoimg.com/600x650?bg_color=c900c9&text_color=ffffff&text=Slide%202%20mobile" alt="" />
-						<img class="hidden-xs" src="http://fpoimg.com/1200x500?bg_color=c900c9&text_color=ffffff&text=Slide%202" alt="" />
+					<div>
+						<img class="visible-xs" src="http://fpoimg.com/600x650?bg_color=c900c9&text_color=ffffff&text=Slide%202%20mobile" alt="" width="100%"/>
+						<img class="hidden-xs" src="http://fpoimg.com/1200x500?bg_color=c900c9&text_color=ffffff&text=Slide%202" alt="" width="100%"/>
 					</div>
 					<!-- end SLIDE 2-->
 					<!-- SLIDE 3-->
-					<div style="display: none">
-						<img class="visible-xs" src="http://fpoimg.com/600x650?bg_color=00c900&text_color=ffffff&text=Slide%203%20mobile" alt="" />
-						<img class="hidden-xs" src="http://fpoimg.com/1200x500?bg_color=00c900&text_color=ffffff&text=Slide%203" alt="" />
+					<div>
+						<img class="visible-xs" src="http://fpoimg.com/600x650?bg_color=00c900&text_color=ffffff&text=Slide%203%20mobile" alt="" width="100%"/>
+						<img class="hidden-xs" src="http://fpoimg.com/1200x500?bg_color=00c900&text_color=ffffff&text=Slide%203" alt="" width="100%"/>
 					</div>
 					<!-- end SLIDE 3-->
 				</div>
@@ -166,17 +164,17 @@ description:
 </div>
 <div class="row max-1080 txt-center jumbotron">
 	<h1 style="line-height: .8em;">SCHMITZ DOOR SERVICE</h1>
-	<h2><small>LOCALLY OWNED &amp; OPERATED SERVICING GARAGE DOORS WITHIN THE MADISON, WI AREA FOR OVER 35 YEARS.</small></h2>
+	<h2><small>LOCALLY OWNED &amp; OPERATED - SERVICING GARAGE DOORS WITHIN THE MADISON, WI AREA FOR OVER 35 YEARS.</small></h2>
 </div>
 <div class="row max-1080">
 	<div class="row-eq-height">
 		<!-- Centered Next to image -->
-		<div class="col-xs-12 col-sm-6 no-pad txt-right">
+		<div class="col-xs-12 col-sm-6 txt-right">
 			<h1 class="txt-inherit">Experienced Garage Service</h1>
 			<p>With Schmitz Door Service on the job, you can insure the integrity of your overhead garage door and opener system. Our experienced garage door sales and service staff will work with you to find the perfect solution to your problem.</p>
 			<a href="{{ site.baseurl }}/services" class="btn btn-primary action-link" type="button">OUR SERVICES</a>
 		</div>
-		<div class="col-xs-12 col-sm-6 no-pad">
+		<div class="col-xs-12 col-sm-6">
 			<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://fpoimg.com/800x450?bg_color=00c900&text_color=ffffff&text=IMG" class="lazyload" alt="" width="100%" />
 		</div>
 		<!-- end Centered Next ot image -->
@@ -186,12 +184,12 @@ description:
 	<div class="hidden-xs clearfix" style="padding: 25px;"></div>
 	<div class="row-eq-height">
 		<!-- Centered Next to image -->
-		<div class="col-xs-12 col-sm-6 no-pad col-sm-push-6 txt-left">
+		<div class="col-xs-12 col-sm-6 col-sm-push-6 txt-left">
 			<h1 class="txt-inherit">Call Us Anytime</h1>
 			<p>We are Madison's premier garage door service, serving the area for over 35 years. Free estimates, affordable service, efficient and friendly response. Offering top quality products and parts, including Liftmaster openers and MidAmerica doors.</p>
 			<a href="tel:+1-608-274-0880" class="btn btn-primary action-link" type="button">CALL US TODAY</a>
 		</div>
-		<div class="col-xs-12 col-sm-6 no-pad col-sm-pull-6">
+		<div class="col-xs-12 col-sm-6 col-sm-pull-6">
 			<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://fpoimg.com/800x450?bg_color=00c900&text_color=ffffff&text=IMG" class="lazyload" alt="" width="100%" />
 		</div>
 		<!-- end Centered Next ot image -->
@@ -201,12 +199,12 @@ description:
 	<div class="hidden-xs clearfix" style="padding: 25px;"></div>
 	<div class="row-eq-height">
 		<!-- Centered Next to image -->
-		<div class="col-xs-12 col-sm-6 no-pad txt-right">
+		<div class="col-xs-12 col-sm-6 txt-right">
 			<h1 class="txt-inherit">Your Satisfaction is Our Primary Goal</h1>
 			<p>We know that the best way to ensure your satisfaction is by responding quickly and doing the job right the first time. Whether it is a broken spring, a snapped cable or a noisy roller or a brand new door, give our garage door repair technicians a call. For dependable, high quality garage door service, think of us Schmitz Door Service first.</p>
 			<a target="_blank" href="https://goo.gl/BCiD0j" class="btn btn-primary action-link" type="button">READ THE REVIEWS</a>
 		</div>
-		<div class="col-xs-12 col-sm-6 no-pad">
+		<div class="col-xs-12 col-sm-6">
 			<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://fpoimg.com/800x450?bg_color=00c900&text_color=ffffff&text=IMG" class="lazyload" alt="" width="100%" />
 		</div>
 		<!-- end Centered Next ot image -->
