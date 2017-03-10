@@ -14,9 +14,7 @@ layout: compress
 	.hideload {
 		/* styles to use when web fonts are loading */
 		opacity: 0; 
-		transition: opacity 1s ease-in-out;
-		-moz-transition: opacity 1s ease-in-out;
-		-webkit-transition: opacity 1s ease-in-out;
+		
 		/*Loader Animation is below*/
 		position: fixed;
 		left: 0;
@@ -34,6 +32,9 @@ layout: compress
 		top: 0px;
 		position: relative;
 		z-index: 5;
+		transition: opacity 1s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-webkit-transition: opacity 1s ease-in-out;
 	}
 	
 	@font-face {
