@@ -1,3 +1,16 @@
+<style type="text/css">
+.navbar-nav {
+	position: relative;
+	top: 25px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 1px) {
+	.navbar-nav {
+		position: relative;
+		top: 0px;
+	}
+}
+</style>
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
@@ -8,20 +21,21 @@
 				<span class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand" href="{{ site.baseurl }}/">
-				<img src="{{ site.baseurl }}/assets/css/images/schmitzdoor-logo.svg" alt="SCHMITZ DOOR SERVICE LLC" title="SCHMITZ DOOR SERVICE LLC" width="100%" data-pin-nopin="true" style="display: inline-block;">
-				SCHMITZ DOOR SERVICE
+				<img src="{{ site.baseurl }}/assets/css/images/schmitzdoor-logo-alt.svg" alt="SCHMITZ DOOR SERVICE LLC" title="SCHMITZ DOOR SERVICE LLC" width="100%" data-pin-nopin="true">
+				<!--SCHMITZ DOOR-->
 			</a>
 		</div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a href="{{ site.baseurl }}/services">SERVICES</a><span class="hover"></span></li>
-				<li><a href="{{ site.baseurl }}/products">PRODUCTS</a><span class="hover"></span></li>
+				<li><a href="{{ site.baseurl }}/services">Services</a><span class="hover"></span></li>
+				<li><a href="{{ site.baseurl }}/products">Products</a><span class="hover"></span></li>
 				<li><a href="{{ site.baseurl }}/faq">FAQ</a><span class="hover"></span></li>
-				<li><a href="{{ site.baseurl }}/contact-us">CONTACT US</a><span class="hover"></span></li>
+				<li><a href="{{ site.baseurl }}/contact-us">Contact Us</a><span class="hover"></span></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li class="hidden-sm">
-					<a href="tel:+1-608-274-0880"><strong>+1-608-274-0880</strong></a><span class="hover"></span></li>
+				<li>
+					<a href="tel:+1-608-274-0880"><strong style="color: #e0871a; font-size: 1.2em">+1-608-274-0880</strong></a><span class="hover"></span>
+				</li>
 			</ul>
 		</div>
 	</div>
