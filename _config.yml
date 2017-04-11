@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Schmitz Door Service
+title: 
 email: schmitzdoor@gmail.com
-description: Servicing garage doors within the Madison, WI area for over 35 years.
+description: Garage Door Repairs & Garage Door Service Serving the Madison, WI & Southern Wisconsin area for over 35 years. Call us today +1-608-274-0880
 twitter_username: 12ossome
 github_username:  12oss
 
@@ -30,14 +30,14 @@ permalink:        pretty
 # Server
 source:           _gh_pages
 destination:      docs
-host:             0.0.0.0
-port:             12055
-baseurl:          "/schmitzdoor"
+#host:             0.0.0.0
+port:             12088
+#baseurl:          "/schmitzdoor"
 #Production : https://12oss.github.io/schmitzdoor/
 #DEV : http://0.0.0.0:12055/schmitzdoor/
 #site.github.url
 #site.baseurl
-url:              "https://12oss.github.io/schmitzdoor/"
+url:              "http://schmitzdoor.com"
 encoding:         UTF-8
 
 #Compress HTML

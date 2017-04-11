@@ -10,6 +10,7 @@ layout: compress
 	{% if page.description %}
 	<meta name="description" content="{{ page.description }}">{% endif %} -->
 	{% include header.html %}
+	{% include analytics.html %}
 	<style>
 	.hideload {
 		/* styles to use when web fonts are loading */
@@ -50,9 +51,7 @@ layout: compress
 	}
 	/* GLOBAL CRITICAL CSS*/
 	
-	{
-		% include critical.min.css %
-	}
+	{% include critical.min.css %}
 	/*END GLOBAL CRITICAL CSS*/
 	</style>
 </head>
@@ -73,7 +72,6 @@ layout: compress
 	<footer class="footer">
 		{% include footer.html %}
 	</footer>
-	{% include analytics.html %}
 </body>
 
 </html>
