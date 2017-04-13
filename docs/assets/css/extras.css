@@ -1,5 +1,6 @@
 /* CSS Document */
 
+
 /*scroll to top*/
 
 div.back-to-top-parent {
@@ -95,6 +96,15 @@ header,
 	/* 2 */
 }
 
+body {
+	background-color: rgba(240, 240, 240, 1);
+}
+
+.container-fluid {
+	min-height: 100%;
+	position: relative;
+}
+
 #footer-contact-info a {
 	color: whitesmoke !important;
 	font-size: 10px;
@@ -154,7 +164,7 @@ footer {
 /*nav ovr*/
 
 .navbar-inverse {
-/*	background: #222B31 !important;*/
+	/*	background: #222B31 !important;*/
 	background: whitesmoke;
 	border-bottom: 4px solid #666 !important;
 }

@@ -17,14 +17,14 @@ layout: compress
 		opacity: 0; 
 		
 		/*Loader Animation is below*/
-		position: fixed;
+		/*position: fixed;
 		left: 0;
 		top: 0px;
 		z-index: 999;
 		width: 100%;
 		height: 100%;
 		overflow: visible;
-		background: #fff url('{{ site.baseurl }}/assets/css/images/ajax-loader.gif') no-repeat center center;
+		background: #fff url('{{ site.baseurl }}/assets/css/images/ajax-loader.gif') no-repeat center center;*/
 	}
 	
 	.wf-active {
@@ -63,9 +63,7 @@ layout: compress
 	</header>
 	<main class="site-content" style="margin-top: 98px">
 		<div class="container-fluid">
-			<div class="row">
-				{{ content }}
-			</div>
+			{{ content }}
 		</div>
 	</main>
 	{% include back-to-top.html %}
