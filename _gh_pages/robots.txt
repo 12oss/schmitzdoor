@@ -5,4 +5,4 @@ User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
 Disallow: /styleguide/
-Sitemap: http://www.schmitzdoor.com/sitemap.xml
+Sitemap: https://www.schmitzdoor.com/sitemap.xml
