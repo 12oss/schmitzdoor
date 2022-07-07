@@ -9,18 +9,8 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "3.2.1"
 
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima"
-
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
- #gem "github-pages", group: :jekyll_plugins
- gem 'jekyll-paginate', group: :jekyll_plugins
- gem 'jekyll-seo-tag', group: :jekyll_plugins
- gem 'jekyll-sitemap'
- #gem 'jekyll-github-metadata'
+gem 'github-pages'
 
 
 # If you have any plugins, put them here!
@@ -30,3 +20,5 @@ gem "minima"
 
 #end
 
+
+gem "webrick", "~> 1.7"
